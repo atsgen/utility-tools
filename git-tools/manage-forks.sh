@@ -22,14 +22,14 @@ function handle_repo {
     git clone git@github.com:atsgen/$REPO.git
     failed_branches=0
     pushd $REPO
-    my_branches=($(git branch -a | grep origin | grep -v HEAD | awk '{split($0, a, "/"); print a[3]}'))
+    my_branches=($(git branch -a | grep origin | grep -v HEAD | awk '{split($0, a, "origin/"); print a[2]}'))
     for branch in ${my_branches[@]}
     do
         git checkout $branch --
     done
     git remote add upstream https://github.com/Juniper/$REPO.git
     git fetch upstream
-    up_branches=($(git branch -a | grep upstream | grep -v HEAD | awk '{split($0, a, "/"); print a[3]}'))
+    up_branches=($(git branch -a | grep upstream | grep -v HEAD | awk '{split($0, a, "upstream/"); print a[2]}'))
     for branch in ${up_branches[@]}
     do
         git checkout $branch --
