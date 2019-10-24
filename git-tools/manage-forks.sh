@@ -4,20 +4,6 @@
 # Maintainer: prabhjot@atsgen.com
 #
 
-which curl >> /dev/null
-if [[ $? -ne 0 ]]
-then
-    echo "curl: command not found, needed by utility"
-    exit 1
-fi
-
-which jq >> /dev/null
-if [[ $? -ne 0 ]]
-then
-    echo "jq: command not found, needed by utility"
-    exit 1
-fi
-
 DOMAIN='atsgen'
 
 FILENAME='fork-list.txt'
@@ -32,27 +18,25 @@ REPO_DIR=''
 OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
 function handle_repo {
+    LOG_DIR=$PWD
     git clone git@github.com:atsgen/$REPO.git
     failed_branches=0
     pushd $REPO
     my_branches=($(git branch -a | grep origin | grep -v HEAD | awk '{split($0, a, "/"); print a[3]}'))
     for branch in ${my_branches[@]}
     do
-        git checkout $branch
+        git checkout $branch --
     done
     git remote add upstream https://github.com/Juniper/$REPO.git
     git fetch upstream
     up_branches=($(git branch -a | grep upstream | grep -v HEAD | awk '{split($0, a, "/"); print a[3]}'))
     for branch in ${up_branches[@]}
     do
-        git checkout $branch
+        git checkout $branch --
         git branch -a | grep origin/$branch > /dev/null
         if [[ $? -eq 0 ]]
         then
-            echo "branch $branch found"
             git rebase upstream/$branch
-        else
-            echo "branch $branch not found"
         fi
         git status | grep up-to-date | grep origin > /dev/null
         if [[ $? -ne 0 ]]
@@ -62,9 +46,13 @@ function handle_repo {
             if [[ $? -ne 0 ]]
             then
                 echo "failed to push branch $branch"
-                echo "$REPO branch $branch" >> ../../failed.txt
+                echo "$REPO branch $branch" >> $LOG_DIR/failed.txt
                 failed_branches=1
+            else
+                echo "$REPO branch $branch" >> $LOG_DIR/updated.txt
             fi
+        else
+            echo "$REPO branch $branch no change" >> $LOG_DIR/updated.txt
         fi
     done
     popd
@@ -102,6 +90,19 @@ fi
 
 if [[ $GENERATE_REPO_LIST -eq 1 ]]
 then
+    which curl >> /dev/null
+    if [[ $? -ne 0 ]]
+    then
+        echo "curl: command not found, needed by utility"
+        exit 1
+    fi
+
+    which jq >> /dev/null
+    if [[ $? -ne 0 ]]
+    then
+        echo "jq: command not found, needed by utility"
+        exit 1
+    fi
     curl -s https://api.github.com/users/{$DOMAIN}/repos?per_page=1000 | jq '.[] | select(.fork==true) .name' | awk '{split($0, a, "\""); print a[2]}' > $FILENAME
 fi
 
