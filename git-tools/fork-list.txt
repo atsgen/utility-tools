@@ -1,4 +1,5 @@
 contrail-analytics
+contrail-ansible-deployer
 contrail-api-client
 contrail-aws-ci-provisioning
 contrail-build
@@ -6,12 +7,16 @@ contrail-ceilometer-plugin
 contrail-common
 contrail-container-builder
 contrail-controller
+contrail-deployers-containers
+contrail-dev-env
 contrail-distro-third-party
 contrail-dpdk
 contrail-dpdk-extra-packages
 contrail-f5
 contrail-generateDS
 contrail-heat
+contrail-helm-deployer
+contrail-kolla-ansible
 contrail-neutron-plugin
 contrail-nova-extensions
 contrail-nova-vif-driver
@@ -35,4 +40,7 @@ contrail-web-core
 contrail-web-server-manager
 contrail-web-storage
 contrail-webui-third-party
+openshift-ansible
+openstack-helm
+openstack-helm-infra
 python-neutronclient

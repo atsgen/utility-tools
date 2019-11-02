@@ -19,6 +19,8 @@ OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
 function handle_repo {
     LOG_DIR=$PWD
+    # remove previous directory if present
+    rm -rf $REPO
     git clone git@github.com:atsgen/$REPO.git
     failed_branches=0
     pushd $REPO
@@ -113,6 +115,11 @@ then
     then
         echo "directory to checkout code is not specified"
         exit 1
+    fi
+    if [[ ! -d "$REPO_DIR" ]]
+    then
+        # create directory if doesnot exist
+        mkdir -p $REPO_DIR
     fi
     pushd $REPO_DIR
     if [[ $? -ne 0 ]]
