@@ -16,6 +16,7 @@ atsgen/contrail-f5
 atsgen/contrail-generateDS
 atsgen/contrail-heat
 atsgen/contrail-helm-deployer
+atsgen/contrail-java-api
 atsgen/contrail-kolla-ansible
 atsgen/contrail-neutron-plugin
 atsgen/contrail-nova-extensions
@@ -32,7 +33,11 @@ atsgen/contrail-third-party-packages
 atsgen/contrail-tripleo-heat-templates
 atsgen/contrail-tripleo-puppet
 atsgen/contrail-ui-third-party-cache
+atsgen/contrail-vcenter-fabric-manager
+atsgen/contrail-vcenter-manager
+atsgen/contrail-vcenter-plugin
 atsgen/contrail-vnc
+atsgen/contrail-vro-plugin
 atsgen/contrail-vrouter
 atsgen/contrail-vrouter-java-api
 atsgen/contrail-web-controller
@@ -44,3 +49,4 @@ atsgen/openshift-ansible
 atsgen/openstack-helm
 atsgen/openstack-helm-infra
 atsgen/python-neutronclient
+atsgen/vijava

@@ -16,6 +16,7 @@ contrail-f5 atsgen/contrail-f5 Juniper/contrail-f5
 contrail-generateDS atsgen/contrail-generateDS Juniper/contrail-generateDS
 contrail-heat atsgen/contrail-heat Juniper/contrail-heat
 contrail-helm-deployer atsgen/contrail-helm-deployer Juniper/contrail-helm-deployer
+contrail-java-api atsgen/contrail-java-api Juniper/contrail-java-api
 contrail-kolla-ansible atsgen/contrail-kolla-ansible Juniper/contrail-kolla-ansible
 contrail-neutron-plugin atsgen/contrail-neutron-plugin Juniper/contrail-neutron-plugin
 contrail-nova-extensions atsgen/contrail-nova-extensions Juniper/contrail-nova-extensions
@@ -32,7 +33,11 @@ contrail-third-party-packages atsgen/contrail-third-party-packages Juniper/contr
 contrail-tripleo-heat-templates atsgen/contrail-tripleo-heat-templates Juniper/contrail-tripleo-heat-templates
 contrail-tripleo-puppet atsgen/contrail-tripleo-puppet Juniper/contrail-tripleo-puppet
 contrail-ui-third-party-cache atsgen/contrail-ui-third-party-cache Juniper/contrail-ui-third-party-cache
+contrail-vcenter-fabric-manager atsgen/contrail-vcenter-fabric-manager Juniper/contrail-vcenter-fabric-manager
+contrail-vcenter-manager atsgen/contrail-vcenter-manager Juniper/contrail-vcenter-manager
+contrail-vcenter-plugin atsgen/contrail-vcenter-plugin Juniper/contrail-vcenter-plugin
 contrail-vnc atsgen/contrail-vnc Juniper/contrail-vnc
+contrail-vro-plugin atsgen/contrail-vro-plugin Juniper/contrail-vro-plugin
 contrail-vrouter atsgen/contrail-vrouter Juniper/contrail-vrouter
 contrail-vrouter-java-api atsgen/contrail-vrouter-java-api Juniper/contrail-vrouter-java-api
 contrail-web-controller atsgen/contrail-web-controller Juniper/contrail-web-controller
@@ -44,3 +49,4 @@ openshift-ansible atsgen/openshift-ansible Juniper/openshift-ansible
 openstack-helm atsgen/openstack-helm Juniper/openstack-helm
 openstack-helm-infra atsgen/openstack-helm-infra Juniper/openstack-helm-infra
 python-neutronclient atsgen/python-neutronclient Juniper/python-neutronclient
+vijava atsgen/vijava Juniper/vijava
