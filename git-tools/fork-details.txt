@@ -13,6 +13,7 @@ contrail-distro-third-party atsgen/contrail-distro-third-party Juniper/contrail-
 contrail-dpdk atsgen/contrail-dpdk Juniper/contrail-dpdk
 contrail-dpdk-extra-packages atsgen/contrail-dpdk-extra-packages Juniper/contrail-dpdk-extra-packages
 contrail-f5 atsgen/contrail-f5 Juniper/contrail-f5
+contrail-fabric-utils atsgen/contrail-fabric-utils Juniper/contrail-fabric-utils
 contrail-generateDS atsgen/contrail-generateDS Juniper/contrail-generateDS
 contrail-heat atsgen/contrail-heat Juniper/contrail-heat
 contrail-helm-deployer atsgen/contrail-helm-deployer Juniper/contrail-helm-deployer

@@ -13,6 +13,7 @@ atsgen/contrail-distro-third-party
 atsgen/contrail-dpdk
 atsgen/contrail-dpdk-extra-packages
 atsgen/contrail-f5
+atsgen/contrail-fabric-utils
 atsgen/contrail-generateDS
 atsgen/contrail-heat
 atsgen/contrail-helm-deployer
