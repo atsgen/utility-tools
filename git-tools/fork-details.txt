@@ -51,3 +51,4 @@ openstack-helm atsgen/openstack-helm Juniper/openstack-helm
 openstack-helm-infra atsgen/openstack-helm-infra Juniper/openstack-helm-infra
 python-neutronclient atsgen/python-neutronclient Juniper/python-neutronclient
 vijava atsgen/vijava Juniper/vijava
+vpp atsgen/vpp FDio/vpp

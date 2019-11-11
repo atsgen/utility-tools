@@ -51,3 +51,4 @@ atsgen/openstack-helm
 atsgen/openstack-helm-infra
 atsgen/python-neutronclient
 atsgen/vijava
+atsgen/vpp
