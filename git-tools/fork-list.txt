@@ -1,5 +1,4 @@
 atsgen/contrail-analytics
-atsgen/contrail-ansible-deployer
 atsgen/contrail-api-client
 atsgen/contrail-aws-ci-provisioning
 atsgen/contrail-build
@@ -50,5 +49,6 @@ atsgen/openshift-ansible
 atsgen/openstack-helm
 atsgen/openstack-helm-infra
 atsgen/python-neutronclient
+atsgen/tf-ansible-deployer
 atsgen/vijava
 atsgen/vpp

@@ -1,5 +1,4 @@
 contrail-analytics atsgen/contrail-analytics Juniper/contrail-analytics
-contrail-ansible-deployer atsgen/contrail-ansible-deployer Juniper/contrail-ansible-deployer
 contrail-api-client atsgen/contrail-api-client Juniper/contrail-api-client
 contrail-aws-ci-provisioning atsgen/contrail-aws-ci-provisioning Juniper/contrail-aws-ci-provisioning
 contrail-build atsgen/contrail-build Juniper/contrail-build
@@ -50,5 +49,6 @@ openshift-ansible atsgen/openshift-ansible Juniper/openshift-ansible
 openstack-helm atsgen/openstack-helm Juniper/openstack-helm
 openstack-helm-infra atsgen/openstack-helm-infra Juniper/openstack-helm-infra
 python-neutronclient atsgen/python-neutronclient Juniper/python-neutronclient
+tf-ansible-deployer atsgen/tf-ansible-deployer Juniper/contrail-ansible-deployer
 vijava atsgen/vijava Juniper/vijava
 vpp atsgen/vpp FDio/vpp
