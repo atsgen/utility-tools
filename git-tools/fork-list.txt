@@ -4,6 +4,7 @@ atsgen/contrail-api-client
 atsgen/contrail-aws-ci-provisioning
 atsgen/contrail-build
 atsgen/contrail-ceilometer-plugin
+atsgen/contrail-charts
 atsgen/contrail-common
 atsgen/contrail-container-builder
 atsgen/contrail-controller
@@ -15,10 +16,13 @@ atsgen/contrail-dpdk-extra-packages
 atsgen/contrail-f5
 atsgen/contrail-fabric-utils
 atsgen/contrail-generateDS
+atsgen/contrail-go-api
 atsgen/contrail-heat
 atsgen/contrail-helm-deployer
+atsgen/contrail-installer
 atsgen/contrail-java-api
 atsgen/contrail-kolla-ansible
+atsgen/contrail-kubernetes-docs
 atsgen/contrail-neutron-plugin
 atsgen/contrail-nova-extensions
 atsgen/contrail-nova-vif-driver

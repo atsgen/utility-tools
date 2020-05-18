@@ -4,6 +4,7 @@ contrail-api-client atsgen/contrail-api-client Juniper/contrail-api-client
 contrail-aws-ci-provisioning atsgen/contrail-aws-ci-provisioning Juniper/contrail-aws-ci-provisioning
 contrail-build atsgen/contrail-build Juniper/contrail-build
 contrail-ceilometer-plugin atsgen/contrail-ceilometer-plugin Juniper/contrail-ceilometer-plugin
+contrail-charts atsgen/contrail-charts Juniper/contrail-charts
 contrail-common atsgen/contrail-common Juniper/contrail-common
 contrail-container-builder atsgen/contrail-container-builder Juniper/contrail-container-builder
 contrail-controller atsgen/contrail-controller Juniper/contrail-controller
@@ -15,10 +16,13 @@ contrail-dpdk-extra-packages atsgen/contrail-dpdk-extra-packages Juniper/contrai
 contrail-f5 atsgen/contrail-f5 Juniper/contrail-f5
 contrail-fabric-utils atsgen/contrail-fabric-utils Juniper/contrail-fabric-utils
 contrail-generateDS atsgen/contrail-generateDS Juniper/contrail-generateDS
+contrail-go-api atsgen/contrail-go-api Juniper/contrail-go-api
 contrail-heat atsgen/contrail-heat Juniper/contrail-heat
 contrail-helm-deployer atsgen/contrail-helm-deployer Juniper/contrail-helm-deployer
+contrail-installer atsgen/contrail-installer Juniper/contrail-installer
 contrail-java-api atsgen/contrail-java-api Juniper/contrail-java-api
 contrail-kolla-ansible atsgen/contrail-kolla-ansible Juniper/contrail-kolla-ansible
+contrail-kubernetes-docs atsgen/contrail-kubernetes-docs Juniper/contrail-kubernetes-docs
 contrail-neutron-plugin atsgen/contrail-neutron-plugin Juniper/contrail-neutron-plugin
 contrail-nova-extensions atsgen/contrail-nova-extensions Juniper/contrail-nova-extensions
 contrail-nova-vif-driver atsgen/contrail-nova-vif-driver Juniper/contrail-nova-vif-driver
