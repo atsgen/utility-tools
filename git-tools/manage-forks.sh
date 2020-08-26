@@ -40,7 +40,7 @@ function handle_repo {
     for branch in ${up_branches[@]}
     do
         git checkout $branch --
-        git branch -a | grep origin/$branch > /dev/null
+        git branch -a | grep "origin/$branch$" > /dev/null
         if [[ $? -eq 0 ]]
         then
             git rebase upstream/$branch
